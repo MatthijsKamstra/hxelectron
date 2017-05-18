@@ -1,5 +1,10 @@
-atom/
-
-bin/node_modules/*
-doc/pages/
-doc/xml/
+*node_modules/
+*.zip
+data/
+demo/bin/*.js
+demo/bin/*.js.map
+doc/
+atom/*
+all.hxml
+haxedoc.xml
+run.n

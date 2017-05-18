@@ -1,0 +1,19 @@
+language: haxe
+
+os:
+  - linux
+
+haxe:
+  - "3.4.2"
+  - development
+
+matrix:
+  allow_failures:
+    - haxe: development
+
+script:
+  - haxelib git electron https://github.com/fponticelli/hxelectron
+  - haxe run.hxml
+  - neko run.n
+  - haxe doc.hxml
+  - haxe --cwd demo build.hxml
